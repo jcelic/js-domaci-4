@@ -1,0 +1,14 @@
+.overview {
+  width: 300px;
+  margin: auto;
+  padding-top: 70px;
+
+  & > div {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00000038;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

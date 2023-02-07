@@ -1,0 +1,12 @@
+.overview {
+  width: 300px;
+  margin: auto;
+  padding-top: 70px;
+}
+.overview > div {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2196078431);
+}
+.overview > div:last-of-type {
+  border-bottom: none;
+}

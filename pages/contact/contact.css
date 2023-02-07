@@ -1,0 +1,15 @@
+.contact-form {
+  padding: 50px;
+  width: 300px;
+  margin: auto;
+}
+.contact-form div {
+  width: 100%;
+}
+
+.error {
+  color: var(--color-danger);
+  padding: 10px 0;
+  font-weight: bold;
+  height: 24px;
+}

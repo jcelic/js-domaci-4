@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <script defer src="./index.js" type="module"></script>
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <main>
+      <header class="flex flex-center">
+        <h1>Kontakt</h1>
+      </header>
+
+      <form id="contact-form" class="contact-form" autocomplete="off">
+        <div class="flex flex-column">
+          <label class="mb-10" for="name">Ime</label>
+          <input
+            type="text"
+            name="name"
+            class="input"
+            placeholder="Ime"
+            data-required="true"
+            data-min="4"
+            data-max="12"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="flex flex-column">
+          <label class="mb-10" for="surname">Prezime</label>
+          <input
+            type="text"
+            name="surname"
+            class="input"
+            placeholder="Prezime"
+            data-required="true"
+            data-min="4"
+            data-max="12"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="flex flex-column">
+          <label class="mb-10" for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            class="input"
+            placeholder="Email"
+            data-required="true"
+            data-min="8"
+            data-max="25"
+            data-email="validate"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="flex flex-column">
+          <label class="mb-10" for="details">Detalji</label>
+          <textarea
+            class="textarea"
+            name="details"
+            rows="6"
+            data-required="true"
+            data-min="10"
+          ></textarea>
+          <div class="error"></div>
+        </div>
+
+        <div class="flex align-center space-between mb-20">
+          <label for="checkbox">Pretplati se na newsletter</label>
+          <input type="checkbox" name="newsletter" id="checkbox" />
+        </div>
+
+        <button class="button" type="submit">Kreni</button>
+      </form>
+    </main>
+  </body>
+</html>
