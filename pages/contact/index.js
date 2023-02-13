@@ -71,7 +71,9 @@ function validate(input) {
 
 function contactGuard() {
   const data = localStorage.getItem(USER_INFO);
-  data && redirect('/pages/overview/index.html');
+  if (data) {
+    redirect('/pages/overview/index.html');
+  }
 }
 
 contactGuard();

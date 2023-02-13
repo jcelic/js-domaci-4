@@ -2,8 +2,10 @@ import { USER_INFO } from '../../js/constants.js';
 import { redirect } from '../../js/forms.js';
 
 function overviewGuard() {
-  let data = localStorage.getItem(USER_INFO);
-  !data && redirect('/pages/contact/index.html');
+  const data = localStorage.getItem(USER_INFO);
+  if (!data) {
+    redirect('/pages/contact/index.html');
+  }
 }
 
 overviewGuard();
